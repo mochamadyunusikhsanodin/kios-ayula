@@ -1,0 +1,52 @@
+[2025-06-01 09:32:55] Script started
+[2025-06-01 09:32:55] POST data: {"id_barang":"120","quantity":"1"}
+[2025-06-01 09:32:55] Database connected successfully
+[2025-06-01 09:32:55] Processing single transfer for product ID: 120, quantity: 1
+[2025-06-01 09:32:55] Product found: {"id_barang":120,"kode_barang":"BRG039","nama_barang":"Produk A","stok":5,"harga":"150000","id_jenis":8,"image":"kios-Halaman-2.drawio (2).png"}
+[2025-06-01 09:32:55] Updated barang stock to: 4
+[2025-06-01 09:32:55] Product exists in cashier, updating stock to: 6
+[2025-06-01 09:32:55] Transfer completed successfully
+[2025-06-01 09:32:55] Script completed
+[2025-06-01 09:33:23] Script started
+[2025-06-01 09:33:23] POST data: {"product_ids":["120","121"],"quantities":["1","1"]}
+[2025-06-01 09:33:23] Database connected successfully
+[2025-06-01 09:33:23] Processing bulk transfer
+[2025-06-01 09:33:23] Processing item 0: ID=120, Quantity=1
+[2025-06-01 09:33:23] Processing item 1: ID=121, Quantity=1
+[2025-06-01 09:33:23] Complete bulk transfer success: 2 items
+[2025-06-01 09:33:23] Script completed
+[2025-06-01 09:33:33] Script started
+[2025-06-01 09:33:33] POST data: {"id_barang":"122","quantity":"1"}
+[2025-06-01 09:33:33] Database connected successfully
+[2025-06-01 09:33:33] Processing single transfer for product ID: 122, quantity: 1
+[2025-06-01 09:33:33] Product found: {"id_barang":122,"kode_barang":"BRG041","nama_barang":"Produk B","stok":12,"harga":"75000","id_jenis":1,"image":"kios-Halaman-3.drawio (2).png"}
+[2025-06-01 09:33:33] Updated barang stock to: 11
+[2025-06-01 09:33:33] Product exists in cashier, updating stock to: 13
+[2025-06-01 09:33:33] Transfer completed successfully
+[2025-06-01 09:33:33] Script completed
+[2025-06-01 21:07:57] Script started
+[2025-06-01 21:07:57] POST data: {"id_barang":"120","quantity":"1"}
+[2025-06-01 21:07:57] Database connected successfully
+[2025-06-01 21:07:57] Processing single transfer for product ID: 120, quantity: 1
+[2025-06-01 21:07:57] Product found: {"id_barang":120,"kode_barang":"BRG039","nama_barang":"Produk A","stok":3,"harga":"150000","id_jenis":8,"image":"product_1748803380.png"}
+[2025-06-01 21:07:57] Updated barang stock to: 2
+[2025-06-01 21:07:57] Product exists in cashier, updating stock to: 8
+[2025-06-01 21:07:57] Transfer completed successfully
+[2025-06-01 21:07:57] Script completed
+[2025-06-01 21:08:07] Script started
+[2025-06-01 21:08:07] POST data: {"product_ids":["122","124"],"quantities":["1","1"]}
+[2025-06-01 21:08:07] Database connected successfully
+[2025-06-01 21:08:07] Processing bulk transfer
+[2025-06-01 21:08:07] Processing item 0: ID=122, Quantity=1
+[2025-06-01 21:08:07] Processing item 1: ID=124, Quantity=1
+[2025-06-01 21:08:07] Complete bulk transfer success: 2 items
+[2025-06-01 21:08:07] Script completed
+[2025-06-03 03:21:32] Script started
+[2025-06-03 03:21:32] POST data: {"id_barang":"122","quantity":"1"}
+[2025-06-03 03:21:32] Database connected successfully
+[2025-06-03 03:21:32] Processing single transfer for product ID: 122, quantity: 1
+[2025-06-03 03:21:32] Product found: {"id_barang":122,"kode_barang":"BRG041","nama_barang":"Produk B","stok":10,"harga":"75000","id_jenis":1,"image":"kios-Halaman-3.drawio (2).png"}
+[2025-06-03 03:21:32] Updated barang stock to: 9
+[2025-06-03 03:21:32] Product exists in cashier, updating stock to: 15
+[2025-06-03 03:21:32] Transfer completed successfully
+[2025-06-03 03:21:32] Script completed

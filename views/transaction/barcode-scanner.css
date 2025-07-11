@@ -1,0 +1,160 @@
+/* Barcode Scanner Styles */
+.barcode-scanner-container {
+    position: relative;
+    z-index: 100;
+    background: linear-gradient(45deg, #ff9f4380, #ff7f5080);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.barcode-scanner-container.sticky-scanner {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: calc(100% - 30px);
+    max-width: 1140px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
+    z-index: 1000;
+}
+
+.barcode-scanner-container.collapsed {
+    padding: 5px 15px;
+}
+
+.barcode-scanner-container.collapsed .barcode-content {
+    display: none;
+}
+
+.barcode-scanner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.barcode-scanner-container.collapsed .barcode-scanner-header {
+    margin-bottom: 0;
+}
+
+.barcode-scanner-header h5 {
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.barcode-toggle-btn {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.barcode-content {
+    position: relative;
+}
+
+.barcode-input-group {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.barcode-input-group .input-group-text {
+    background-color: #f8f9fa;
+    border: none;
+    padding: 10px 15px;
+}
+
+#barcode-input {
+    border: none;
+    box-shadow: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #fff;
+    flex-grow: 1;
+}
+
+#barcode-input:focus {
+    outline: none;
+}
+
+#barcode-status {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #6c757d;
+    height: 20px;
+}
+
+/* Scanning animation */
+.barcode-scanner-container.scanning {
+    background: linear-gradient(45deg, #ff9f4330, #ff7f5030);
+}
+
+.barcode-scanner-container.scanning .barcode-input-group {
+    box-shadow: 0 0 0 2px #ff9f43;
+}
+
+/* Highlight product in grid */
+.productset.highlight-product {
+    border: 2px solid #28a745;
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
+    animation: highlight-pulse 1.5s;
+}
+
+@keyframes highlight-pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(40, 167, 69, 0.5);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(40, 167, 69, 0.8);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(40, 167, 69, 0.5);
+    }
+}
+
+/* Product Added Notification */
+.barcode-notification {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.3s, transform 0.3s;
+    font-weight: bold;
+    max-width: 280px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.barcode-notification.show {
+    opacity: 1;
+    transform: translateX(0);
+}
